@@ -9,6 +9,6 @@ import retrofit2.http.GET;
 
 public interface MariaJeanneService {
 
-    @GET("mariajeanne")
+    @GET("strains/search/all ")
     Call<List<MariaJeanneDTO>> getAllMJ();
 }

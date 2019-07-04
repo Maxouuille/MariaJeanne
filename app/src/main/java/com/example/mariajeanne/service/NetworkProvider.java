@@ -16,7 +16,7 @@ public class NetworkProvider {
     MariaJeanneService mariaJeanneService;
 
     private NetworkProvider(){
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("strainapi.evanbusse.com/BSkR8ph")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("strainapi.evanbusse.com/BSkR8ph/")
                 .addConverterFactory(GsonConverterFactory.create()).build();
         mariaJeanneService = retrofit.create(MariaJeanneService.class);
     }

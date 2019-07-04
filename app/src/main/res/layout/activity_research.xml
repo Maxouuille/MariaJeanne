@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ResearchActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/research_activity_all_btn"
+        android:text="@string/activity_research_all" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/research_activity_name_btn"
+        app:layout_constraintTop_toBottomOf="@id/research_activity_all_btn"
+        android:hint="@string/activity_research_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/research_activity_race_btn"
+        app:layout_constraintTop_toBottomOf="@id/research_activity_name_btn"
+        android:hint="@string/activity_research_race"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/research_activity_effect_btn"
+        app:layout_constraintTop_toBottomOf="@id/research_activity_race_btn"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/research_activity_flavour_btn"
+        app:layout_constraintTop_toBottomOf="@id/research_activity_effect_btn"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/research_activity_validate_btn"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_bar"
+        android:text="@string/activity_research_validate"/>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:itemIconTint="@drawable/bottom_navigation_colors"
+        app:itemTextColor="@drawable/bottom_navigation_colors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MariaJeanne</string>
+
+    <string name="bottom_navigation_menu_home">Accueil</string>
+    <string name="bottom_navigation_menu_search">Recherche</string>
+    <string name="bottom_navigation_menu_favorite">Favori</string>
+    <string name="activity_research_all">Toute les mariaJEANNE</string>
+    <string name="activity_research_name">Nom</string>
+    <string name="activity_research_race">Race</string>
+    <string name="activity_research_effect">Effet</string>
+    <string name="activity_research_flavour">Gout</string>
+    <string name="activity_research_validate">Valider</string>
+</resources>

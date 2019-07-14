@@ -16,6 +16,7 @@ public class ResearchActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()){
                 case R.id.action_home:
+                    "zefjdofvne";
                     Intent intentMain = new Intent(ResearchActivity.this, MainActivity.class);
                     startActivity(intentMain);
                     return true;

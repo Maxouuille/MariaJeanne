@@ -10,4 +10,7 @@
     <string name="activity_research_effect">Effet</string>
     <string name="activity_research_flavour">Gout</string>
     <string name="activity_research_validate">Valider</string>
+    <string name="main_title">Maria Jeanne</string>
+    <string name="main_hint">Notre Herbe du Jour</string>
+    <string name="main_text">Bienvenue sur notre application MariaJEANNE  Découvrez les meilleurs produits du terroir !</string>
 </resources>

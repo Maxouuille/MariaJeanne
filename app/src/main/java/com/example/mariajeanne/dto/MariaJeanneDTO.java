@@ -21,11 +21,11 @@ public class MariaJeanneDTO {
         this.id = id;
     }
 
-    public static String getName() { return name; }
+    public  String getName() { return name; }
 
     public void setName() { this.name = name; }
 
-    public static String getRace() {
+    public String getRace() {
         return race;
     }
 
@@ -33,7 +33,7 @@ public class MariaJeanneDTO {
         this.race = race;
     }
 
-    public static List<String> getFlavors() {
+    public List<String> getFlavors() {
         return flavors;
     }
 

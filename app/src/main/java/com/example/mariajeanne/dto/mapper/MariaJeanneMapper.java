@@ -18,9 +18,8 @@ public class MariaJeanneMapper {
 
     private static MariaJeanne map(MariaJeanneDTO mariaJeanneDTO){
         MariaJeanne mariaJeanne = new MariaJeanne();
-        mariaJeanne.setRace(MariaJeanneDTO.getRace());
-        mariaJeanne.setName(MariaJeanneDTO.getName());
-        mariaJeanne.setFlavor(MariaJeanneDTO.getFlavors());
+        mariaJeanne.setRace(mariaJeanneDTO.getRace());
+        mariaJeanne.setName(mariaJeanneDTO.getName());
 
 
         return mariaJeanne;

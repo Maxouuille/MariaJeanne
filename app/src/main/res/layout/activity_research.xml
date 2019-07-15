@@ -15,25 +15,25 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/research_activity_name_btn"
+        android:id="@+id/research_activity_name_edt"
         app:layout_constraintTop_toBottomOf="@id/research_activity_all_btn"
         android:hint="@string/activity_research_name"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/research_activity_race_btn"
-        app:layout_constraintTop_toBottomOf="@id/research_activity_name_btn"
+        android:id="@+id/research_activity_race_edt"
+        app:layout_constraintTop_toBottomOf="@id/research_activity_name_edt"
         android:hint="@string/activity_research_race"/>
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/research_activity_effect_btn"
-        app:layout_constraintTop_toBottomOf="@id/research_activity_race_btn"/>
+        android:id="@+id/research_activity_effect_spinner"
+        app:layout_constraintTop_toBottomOf="@id/research_activity_race_edt"/>
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/research_activity_flavour_btn"
-        app:layout_constraintTop_toBottomOf="@id/research_activity_effect_btn"/>
+        android:id="@+id/research_activity_flavour_spinner"
+        app:layout_constraintTop_toBottomOf="@id/research_activity_effect_spinner"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

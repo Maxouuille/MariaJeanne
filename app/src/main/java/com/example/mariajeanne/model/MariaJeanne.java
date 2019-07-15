@@ -5,8 +5,11 @@ import java.util.List;
 public class MariaJeanne {
 
     int id;
+    String name;
     String race;
     List<String> flavor;
+
+
 
     public int getId() {
         return id;
@@ -15,6 +18,10 @@ public class MariaJeanne {
     public void setId(int id) {
         this.id = id;
     }
+
+    public String getName(){ return name;}
+
+    public void setName(String name){ this.name = name; }
 
     public String getRace() {
         return race;
@@ -30,5 +37,15 @@ public class MariaJeanne {
 
     public void setFlavor(List<String> flavor) {
         this.flavor = flavor;
+    }
+
+    @Override
+    public String toString() {
+        return "MariaJeanne{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", race='" + race + '\'' +
+                ", flavor=" + flavor +
+                '}';
     }
 }

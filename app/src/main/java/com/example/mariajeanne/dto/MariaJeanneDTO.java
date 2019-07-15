@@ -10,6 +10,7 @@ public class MariaJeanneDTO {
     @SerializedName("race") String race;
     @SerializedName("flavors")
     List<String> flavors;
+    @SerializedName("name") String name;
 
 
     public int getId() {
@@ -20,7 +21,11 @@ public class MariaJeanneDTO {
         this.id = id;
     }
 
-    public String getRace() {
+    public static String getName() { return name; }
+
+    public void setName() { this.name = name; }
+
+    public static String getRace() {
         return race;
     }
 
@@ -28,7 +33,7 @@ public class MariaJeanneDTO {
         this.race = race;
     }
 
-    public List<String> getFlavors() {
+    public static List<String> getFlavors() {
         return flavors;
     }
 

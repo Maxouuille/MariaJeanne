@@ -1,0 +1,9 @@
+diff a/app/src/main/java/com/example/mariajeanne/views/ResearchActivity.java b/app/src/main/java/com/example/mariajeanne/views/ResearchActivity.java	(rejected hunks)
+@@ -16,6 +16,7 @@
+         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+             switch (item.getItemId()){
+                 case R.id.action_home:
++                    "zefjdofvne";
+                     Intent intentMain = new Intent(ResearchActivity.this, MainActivity.class);
+                     startActivity(intentMain);
+                     return true;

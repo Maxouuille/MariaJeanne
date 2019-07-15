@@ -1,7 +1,7 @@
 package com.example.mariajeanne.service;
 
 import com.example.mariajeanne.dto.MariaJeanneDTO;
-import com.example.mariajeanne.dto.MariaJeanneMapper;
+import com.example.mariajeanne.dto.mapper.MariaJeanneMapper;
 import com.example.mariajeanne.model.MariaJeanne;
 
 import java.util.List;

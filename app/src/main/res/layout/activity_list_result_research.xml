@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.ListResultResearchActivity">
+    tools:context=".views.ui.ListResultResearchActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/activity_list_result_research_activity_lv"

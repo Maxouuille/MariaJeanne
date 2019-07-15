@@ -23,4 +23,10 @@ public interface MariaJeanneService {
 
     @GET("strains/search/flavor/{flavor}")
     Call<List<MariaJeanneDTO>> getMJByFlavor(String flavor);
+
+    @GET("searchdata/effects ")
+    Call<List<String>> getAllEffect();
+
+    @GET("searchdata/flavors")
+    Call<List<String>> getAllFlavors();
 }

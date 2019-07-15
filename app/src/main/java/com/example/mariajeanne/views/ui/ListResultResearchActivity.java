@@ -1,4 +1,4 @@
-package com.example.mariajeanne.views;
+package com.example.mariajeanne.views.ui;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;

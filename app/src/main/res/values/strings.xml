@@ -14,4 +14,7 @@
     <string name="main_hint">Notre Herbe du Jour</string>
     <string name="main_text">Bienvenue sur notre application MariaJEANNE  Découvrez les meilleurs produits du terroir !</string>
     <string name="plant_name_favorite">Nom de la plante</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

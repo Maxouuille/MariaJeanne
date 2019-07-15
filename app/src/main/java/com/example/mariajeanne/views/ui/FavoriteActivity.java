@@ -1,4 +1,4 @@
-package com.example.mariajeanne.views;
+package com.example.mariajeanne.views.ui;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -8,24 +8,25 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.mariajeanne.R;
+import com.example.mariajeanne.views.contract.IFavoriteActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class FavoriteActivity extends AppCompatActivity implements IFavoriteActivity {
 
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()){
                 case R.id.action_home:
+                    Intent intentMain = new Intent(FavoriteActivity.this, MainActivity.class);
+                    startActivity(intentMain);
                     return true;
 
                 case R.id.action_search:
-                    Intent intentResearch = new Intent(MainActivity.this, ResearchActivity.class);
-                    startActivity(intentResearch);
+                    Intent intentFavorite = new Intent(FavoriteActivity.this, ResearchActivity.class);
+                    startActivity(intentFavorite);
                     return true;
 
                 case R.id.action_favorite:
-                    Intent intentFavorite = new Intent(MainActivity.this, FavoriteActivity.class);
-                    startActivity(intentFavorite);
                     return true;
             }
             return false;
@@ -35,10 +36,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_favorite);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_bar);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        bottomNavigationView.setSelectedItemId(R.id.action_favorite);
     }
 }

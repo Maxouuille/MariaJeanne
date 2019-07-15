@@ -1,4 +1,4 @@
-package com.example.mariajeanne.views;
+package com.example.mariajeanne.views.ui;
 
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;

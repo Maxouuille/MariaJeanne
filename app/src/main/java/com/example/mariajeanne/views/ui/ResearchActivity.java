@@ -1,4 +1,4 @@
-package com.example.mariajeanne.views;
+package com.example.mariajeanne.views.ui;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -12,18 +12,19 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import com.example.mariajeanne.R;
+import com.example.mariajeanne.views.contract.IResearchActivity;
 
-public class ResearchActivity extends AppCompatActivity {
+public class ResearchActivity extends AppCompatActivity implements IResearchActivity {
 
-    Button allBtn = findViewById(R.id.research_activity_all_btn);
+    Button allBtn;
 
-    EditText nameEdt = findViewById(R.id.research_activity_name_edt);
+    /*EditText nameEdt = findViewById(R.id.research_activity_name_edt);
     EditText raceBtn = findViewById(R.id.research_activity_race_edt);
 
     Spinner effetSpinner = findViewById(R.id.research_activity_effect_spinner);
-    Spinner flavourSpinner = findViewById(R.id.research_activity_flavour_spinner);
+    Spinner flavourSpinner = findViewById(R.id.research_activity_flavour_spinner);*/
 
-    Button validateBtn = findViewById(R.id.research_activity_validate_btn);
+    Button validateBtn;
 
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
@@ -52,6 +53,10 @@ public class ResearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_research);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_bar);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        bottomNavigationView.setSelectedItemId(R.id.action_search);
+        allBtn = findViewById(R.id.research_activity_all_btn);
+        validateBtn = findViewById(R.id.research_activity_validate_btn);
+
 
         /**
          * effetSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -70,7 +75,7 @@ public class ResearchActivity extends AppCompatActivity {
                intentListresultResearchActivity.putExtra("typeSearch", 0);
            }
        });
-        validateBtn.setOnClickListener(new View.OnClickListener() {
+        /*validateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentListresultResearchActivity = new Intent(ResearchActivity.this, ListResultResearchActivity.class);
@@ -78,7 +83,7 @@ public class ResearchActivity extends AppCompatActivity {
                 intentListresultResearchActivity.putExtra("name", nameEdt.getText());
                 //intentListresultResearchActivity.putExtra("race", raceBtn.getText());
             }
-        });
+        });*/
 
 
     }

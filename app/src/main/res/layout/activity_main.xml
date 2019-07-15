@@ -10,10 +10,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/activity_main_title"
-        android:text="Maria Jeanne"
-        android:textSize="35dp"
+        android:text="@string/main_title"
+        android:textSize="35sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -28,10 +29,11 @@
         android:layout_width="wrap_content"
         android:id="@+id/activity_main_random_mj_btn"
         android:layout_height="wrap_content"
-        android:text="Notre Herbe du Jour"
+        android:text="@string/main_hint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activty_main_img"/>
+        app:layout_constraintTop_toBottomOf="@id/activty_main_img"
+        app:layout_constraintBottom_toTopOf="@id/activity_main_detail"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,17 +41,17 @@
         android:id="@+id/activity_main_detail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textAlignment="center"
         android:maxLines="4"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_bar"
-        android:text="Bienvenue sur notre application MariaJEANNE\n Découvrez les meilleurs produits du terroir !"
+        android:text="@string/main_text"
         />
     <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
         android:id="@+id/bottom_navigation_bar"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="@color/bn_checked"
         app:itemIconTint="@drawable/bottom_navigation_colors"
         app:itemTextColor="@drawable/bottom_navigation_colors"
         app:layout_constraintBottom_toBottomOf="parent"
